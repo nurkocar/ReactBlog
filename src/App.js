@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Create from './Create';
 import BlogDetail from './BlogDetail';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
             <Route path='/' component={Home} exact />
             <Route path='/create' component={Create} />
             <Route path='/blogs/:id' component={BlogDetail} />
-
+            <Route path='*' component={NotFound} />
+            
           </Switch>
         </div>
       </div>
